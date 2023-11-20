@@ -1,0 +1,8 @@
+E:/clion_project/test/cmake-build-debug/CMakeFiles/listedlist_queue.dir
+E:/clion_project/test/cmake-build-debug/CMakeFiles/linkedlist_stack.dir
+E:/clion_project/test/cmake-build-debug/CMakeFiles/deque.dir
+E:/clion_project/test/cmake-build-debug/CMakeFiles/linkedlist_queue.dir
+E:/clion_project/test/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/clion_project/test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/clion_project/test/cmake-build-debug/algo/CMakeFiles/edit_cache.dir
+E:/clion_project/test/cmake-build-debug/algo/CMakeFiles/rebuild_cache.dir

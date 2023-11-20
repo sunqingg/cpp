@@ -1,0 +1,45 @@
+version: '2'
+services:
+  nginx:
+    hostname: nginx
+    build:
+      context: /opt/compose_lnmp/nginx/
+      dockerfile: Dockerfile
+    ports:
+      - 1111:80
+      - 2222:443
+    container_name: nginx_server
+    networks:
+      lnmp:
+        ipv4_address: 172.111.0.10
+
+  mysql:
+    hostname: mysql
+    build:
+      context: /opt/compose_lnmp/mysql/
+      dockerfile: Dockerfile
+    ports:
+      - 3306:3306
+    container_name: mysql_server
+    networks:
+      lnmp:
+        ipv4_address: 172.111.0.20
+
+  php:
+    hostname: php
+    build:
+      context: /opt/compose_lnmp/php/
+      dockerfile: Dockerfile
+    ports:
+      - 9000:9000
+    container_name: php_server
+    networks:
+      lnmp:
+        ipv4_address: 172.111.0.30
+
+networks:
+  lnmp:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.111.0.0/16
