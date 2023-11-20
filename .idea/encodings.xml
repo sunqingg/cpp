@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/algo/deque.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/algo/linkedlist_queue.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/algo/linkedlist_stack.cpp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stack_queue.cpp" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

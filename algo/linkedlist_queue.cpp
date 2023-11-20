@@ -64,15 +64,29 @@ public:
     }
     int pop(bool isFront){
         if (isEmpty()){
-            throw out_of_range("ç©ºçš„å°±åˆ«åˆ äº†å§!!!");
+            throw out_of_range("¿ÕµÄ¾Í±ðÉ¾ÁË°É!!!");
         }
+        int num;
         if (isFront){
-            DoublyListNode *n1;
-            n1 = dequefront;
-            if (dequefront->next != nullptr){
-
+            DoublyListNode *fNext = dequefront->next;
+            num = dequefront->val;
+            if (fNext != nullptr){
+                fNext->prev = nullptr;
+                dequefront->next = nullptr;
+                delete dequefront;
             }
+            dequefront = fNext;
+        } else{
+            num = dequefront->val;
+            DoublyListNode *rprev = dequeback->prev;
+            if (rprev != nullptr){
+                rprev->next = nullptr;
+                dequeback->prev= nullptr;
+                delete dequeback;
+            }
+            dequeback = rprev;
         }
+        return num;
     }
 
     int pop_front(){
@@ -87,6 +101,14 @@ public:
 int main(){
     LinkedlistDeque *lq1 = new LinkedlistDeque();
     lq1->push_front(99);
+    lq1->push_front(88);
+    lq1->push_front(77);
+    lq1->push_front(66);
+    lq1->push_front(55);
     int num = lq1->peekFirst();
     cout<<num<<endl;
+    int n2=  lq1->pop_front();
+    printf("É¾³ýµÄÖµÊÇ: %d",n2);
+    int n3 = lq1->peekFirst();
+    cout<<n3<<endl;
 }
