@@ -11,3 +11,7 @@ add_executable(linkedlist_stack algo/linkedlist_stack.cpp)
 add_executable(deque algo/deque.cpp)
 add_executable(linkedlist_queue algo/linkedlist_queue.cpp)
 add_executable(hash_map_chaining algo/hash_map_chaining.cpp)
+add_executable(array_binary_tree algo/chapter_tree/array_binary_tree.cpp)
+
+add_executable(binary_search_tree algo/chapter_tree/binary_search_tree.cpp)
+add_executable(graph_adjacency_list algo/chapter_graph/graph_adjacency_list.cpp)

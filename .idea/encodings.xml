@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/algo/chapter_graph/graph_adjacency_list.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/algo/chapter_tree/array_binary_tree.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/algo/deque.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/algo/linkedlist_queue.cpp" charset="GBK" />
     <file url="file://$PROJECT_DIR$/algo/linkedlist_stack.cpp" charset="UTF-8" />
